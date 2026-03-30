@@ -35,7 +35,7 @@ public class BinarySearch {
     //But the original method signature cannot be changed for abstraction reasons
     //So we create a helper function which can keep track of these indices and call this helper function from the original method
     public static <V extends Comparable<? super V>> boolean helpRecursive(V[] array, V value, int low, int high) {
-        if (low >= high) { //The terminating condition in the loop is the base case for the recursion
+        if (low > high) { //The terminating condition in the loop is the base case for the recursion
             return false;
         }
         else {
